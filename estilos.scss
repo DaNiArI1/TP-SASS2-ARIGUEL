@@ -1,3 +1,9 @@
+$font1: verdana, Geneva, Tahoma, sans-serif;
+$font2: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+$fontsm: 10px;
+$fontlg: 25px;
+
 html{
     scroll-behavior: smooth;
     background-color: black;
@@ -20,15 +26,15 @@ header{
 }
 header p{
     width: 25%;
-    font-size: 22px;
+    font-size: $fontlg;
     text-transform: capitalize;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $font1;
     color: #fff;
 }
 
 nav a{
     text-decoration: none;
-    font-size: 25px;
+    font-size: $fontlg;
     text-transform: capitalize;
     word-spacing: 50px;
     color: #fff !important;
@@ -94,7 +100,7 @@ nav a:hover{
         text-align: center;
     }
     nav {
-        font-size: 10px;
+        font-size: $fontsm;
         padding: 0;
         text-align: center;
     }
@@ -125,7 +131,7 @@ nav a:hover{
         text-align: center;
     }
     header p{
-        font-size: 22px;
+        font-size: $fontlg;
         text-transform: capitalize;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: #fff;
@@ -150,7 +156,7 @@ nav a:hover{
 
     nav a{
         text-decoration: none;
-        font-size: 25px;
+        font-size: $fontlg;
         text-transform: capitalize;
         color: #fff !important;
         font-weight: 500;
@@ -203,7 +209,7 @@ footer{
     width: 100%;
     background-color: rgb(27, 11, 11);
     color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: $font2;
 
 }    
 
@@ -218,7 +224,7 @@ footer{
     flex-flow: wrap row;
     justify-content: center;
     align-items: stretch;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: $font2;
     border: white solid;
 }
 .sec2{
@@ -232,7 +238,7 @@ footer{
     flex-flow: wrap row;
     justify-content: center;
     align-items: stretch;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: $font2;
     border: white solid;
 }
 .sec3{
@@ -251,7 +257,7 @@ footer{
     flex-flow: wrap row;
     justify-content: center;
     align-items: stretch;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: $font2;
     border: white solid;
       }
 
@@ -261,7 +267,7 @@ footer{
     background-color: rgb(255, 255, 255);
     color: #fff;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: $font2;
     border: 2px solid grey;
     display: grid;
     grid-template-areas:
@@ -338,7 +344,7 @@ footer{
 }
 .subir i{
     color: #fff;
-    font-size: 25px;
+    font-size: $fontlg;
     text-align: center;
     line-height: 50px;
     font-weight: bold;
@@ -349,7 +355,7 @@ footer{
 h1{
     background-color: gold;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: $font2;
 
 }
 h2{
@@ -357,7 +363,7 @@ h2{
     color: black;
     text-shadow: 2px 2px white;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: $font2;
 
 }
 .formulario{
@@ -368,7 +374,7 @@ h2{
 }
 #us{
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: $font2;
     animation-duration: 3s;
     animation-name: usanimacion;
 }
@@ -385,7 +391,7 @@ h2{
   }
 #goal{
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: $font2;
     animation-duration: 3s;
     animation-name: goalanimacion;
 }
@@ -519,7 +525,7 @@ h2{
       "Text-1 Image-1"
       "Image-2 Text-2";
     background-color: rgb(104, 41, 41);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: $font2;
     border: white solid;
     color: white;
     text-align: center;
@@ -553,11 +559,38 @@ h2{
       grid-column-gap: 2%;
       grid-row-gap: 20px;
       text-align: center;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-family: $font2;
       animation-duration: 2s;
       animation-name: animacioncontenedor;
 
   }
+
+  @media only screen and (min-width: 576px) and (max-width: 767px){
+    .contenedor{
+      grid-template-columns: 99%;
+      grid-template-rows: repeat(4);
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .contenedor{
+        grid-template-columns: 99%;
+        grid-template-rows: repeat(4);
+        grid-column-gap: 0%;
+        grid-row-gap: 20px;
+      }
+    }          
+@media only screen and (min-width: 992px) {
+    .contenedor{
+        border: 3px solid #000;
+        display: grid;
+        grid-template-columns: 50% 46%;
+        grid-template-rows: 35% 65%;
+        grid-column-gap: 2%;
+        grid-row-gap: 20px;
+        text-align: center;
+        font-family: $font2;
+    }
+}
 
   @keyframes animacioncontenedor {
     from {
