@@ -219,7 +219,8 @@ main {
 
 footer {
   width: 100%;
-  background-color: #1b0b0b;
+  height: 100%;
+  background-color: var(--color0);
   color: white;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
@@ -489,6 +490,12 @@ h2 {
   to {
     margin-left: 0%;
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: 10px) and (max-width: 767px) {
+  .sec2 {
+    height: 600px;
   }
 }
 
@@ -823,9 +830,31 @@ h2 {
           filter: saturate(150%) !important;
 }
 
-.magazine-section .my-5 {
-  height: 100%;
-  background-color: #682929 !important;
-  color: white;
+.how-section1 {
+  margin-top: -15%;
+  padding: 10%;
+}
+
+.how-section1 h4 {
+  color: #ffa500;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.how-section1 .subheading {
+  color: #3931af;
+  font-size: 20px;
+}
+
+.how-section1 .row {
+  margin-top: 10%;
+}
+
+.how-img {
+  text-align: center;
+}
+
+.how-img img {
+  width: 40%;
 }
 /*# sourceMappingURL=estilos.css.map */

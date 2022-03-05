@@ -207,7 +207,8 @@ main{
 
 footer{
     width: 100%;
-    background-color: rgb(27, 11, 11);
+    height: 100%;
+    background-color: var(--color0);
     color: white;
     font-family: $font2;
 
@@ -358,6 +359,7 @@ h1{
     font-family: $font2;
 
 }
+
 h2{
     background-color: gold;
     color: black;
@@ -407,6 +409,11 @@ h2{
     }
   }
 
+@media only screen and (min-width: 10px) and (max-width: 767px){
+    .sec2{
+      height: 600px;
+    }
+}
 .galeria{
     width: 100%;
     min-height: 600px;
@@ -634,17 +641,33 @@ h2{
     filter: saturate(150%);
 }
 
-
-
 .card-text:hover{
     transform: scale(1.1) !important;
     transition: all 1s !important;
     filter: saturate(150%) !important;
 }
 
-.magazine-section .my-5{
-    height: 100%;
-    background-color: rgb(104, 41, 41) !important;
-    color: white;
-
+.how-section1{
+    margin-top:-15%;
+    padding: 10%;
+}
+.how-section1 h4{
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 30px;
+}
+.how-section1 .subheading{
+    color: #3931af;
+    font-size: 20px;
+}
+.how-section1 .row
+{
+    margin-top: 10%;
+}
+.how-img 
+{
+    text-align: center;
+}
+.how-img img{
+    width: 40%;
 }
