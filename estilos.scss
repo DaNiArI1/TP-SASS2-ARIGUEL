@@ -31,11 +31,6 @@ header p{
     font-family: $font1;
     color: #fff;
 }
-.logo{
-    image-orientation: unset;
-
-
-}
 
 nav a{
     text-decoration: none;
@@ -566,8 +561,8 @@ h2{
 .contenedor{
       border: 3px solid #000;
       display: grid;
-      grid-template-columns: 50% 46%;
-      grid-template-rows: 35% 65%;
+      grid-template-columns: 49% 49%;
+      grid-template-rows: 50% 50%;
       grid-column-gap: 2%;
       grid-row-gap: 20px;
       text-align: center;
@@ -579,14 +574,15 @@ h2{
 
   @media only screen and (min-width: 576px) and (max-width: 767px){
     .contenedor{
-      grid-template-columns: 99%;
-      grid-template-rows: repeat(4);
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50%;
+      
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px){
     .contenedor{
-        grid-template-columns: 99%;
-        grid-template-rows: repeat(4);
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
         grid-column-gap: 0%;
         grid-row-gap: 20px;
       }
@@ -594,13 +590,7 @@ h2{
 @media only screen and (min-width: 992px) {
     .contenedor{
         border: 3px solid #000;
-        display: grid;
-        grid-template-columns: 50% 46%;
-        grid-template-rows: 35% 65%;
-        grid-column-gap: 2%;
-        grid-row-gap: 20px;
-        text-align: center;
-        font-family: $font2;
+
     }
 }
 
