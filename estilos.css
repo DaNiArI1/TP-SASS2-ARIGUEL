@@ -33,6 +33,10 @@ header p {
   color: #fff;
 }
 
+.logo {
+  image-orientation: unset;
+}
+
 nav a {
   text-decoration: none;
   font-size: 25px;
