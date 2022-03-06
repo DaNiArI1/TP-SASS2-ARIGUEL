@@ -333,26 +333,6 @@ footer{
 
     }
 
-.subir{
-    height: 50px;
-    width: 50px;
-    background-color: grey;
-    border: 2px solid #fff;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    border-radius: 50%;
-}
-.subir i{
-    color: #fff;
-    font-size: $fontlg;
-    text-align: center;
-    line-height: 50px;
-    font-weight: bold;
-    text-shadow: 0 0 10px #000;
-    
-}
-
 h1{
     background-color: gold;
     text-align: center;
@@ -475,13 +455,13 @@ h2{
 
 @media only screen and (max-width: 320px){
     .itemg{
-        height: 200px;
+        height: 400px;
 
     }
 }    
 @media only screen and (min-width: 321px) and (max-width: 575px){
-    .galeria{
-        height: 400px;
+    .itemg{
+        height: 500px;
 
     }
 }    
@@ -615,6 +595,25 @@ h2{
     justify-content: space-around;
     row-gap: 10%;
 }
+@media only screen and (max-width: 576px){
+    .partners{
+        flex-direction: column;
+        align-items: center;
+      
+    }
+    .partner1{
+        padding-top: 10px;
+    }
+}
+    .partner2{
+        padding-top: 10px;
+    
+}
+    .partner3{
+        padding-top: 10px;
+    
+}
+
 .partners:hover{
     transform: matrix(1.1);
     transition: all 1s;
