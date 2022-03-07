@@ -316,10 +316,64 @@ footer{
 
 }
 
+
+.contenedor{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 47% 47%;
+    grid-template-rows: 50% 50%;
+    grid-column-gap: 2%;
+    grid-row-gap: 20px;
+    text-align: center;
+    margin-left: 3%;
+    font-family: $font2;
+    animation-duration: 2s;
+    animation-name: animacioncontenedor;
+
+}
 .item{
     background-color: rgb(104, 41, 41);
     border: 3px solid black;
     color: white;
+    height: 300px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 575px){
+  .item{
+      height: 100%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px){
+  .contenedor{
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-column-gap: 0%;
+    
+  }
+  .item{
+      height: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .contenedor{
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50%;
+      grid-column-gap: 0%;
+      grid-row-gap: 20px;
+    }
+  }
+
+@keyframes animacioncontenedor {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .service5{
@@ -537,54 +591,6 @@ h2{
   .Text-2 { grid-area: Text-2; }
   
   .Text-1 { grid-area: Text-1; }
- 
-.contenedor{
-      border: 3px solid #000;
-      display: grid;
-      grid-template-columns: 49% 49%;
-      grid-template-rows: 50% 50%;
-      grid-column-gap: 2%;
-      grid-row-gap: 20px;
-      text-align: center;
-      font-family: $font2;
-      animation-duration: 2s;
-      animation-name: animacioncontenedor;
-
-  }
-
-  @media only screen and (min-width: 576px) and (max-width: 767px){
-    .contenedor{
-      grid-template-columns: 50% 50%;
-      grid-template-rows: 50% 50%;
-      
-    }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px){
-    .contenedor{
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
-        grid-column-gap: 0%;
-        grid-row-gap: 20px;
-      }
-    }          
-@media only screen and (min-width: 992px) {
-    .contenedor{
-        border: 3px solid #000;
-
-    }
-}
-
-  @keyframes animacioncontenedor {
-    from {
-      margin-left: 100%;
-      width: 300%
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
 
 .partners{
     background-color: rgb(104, 41, 41);
@@ -658,6 +664,7 @@ h2{
 {
     margin-top: 10%;
     background-color: var(--color1);
+    border: 3px solid black;
 }
 .how-img 
 {
