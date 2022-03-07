@@ -284,47 +284,6 @@ footer {
   color: #fff;
 }
 
-.sec4 {
-  height: 80px;
-  width: 100%;
-  background-color: black;
-  color: #fff;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -ms-flex-flow: wrap row;
-      flex-flow: wrap row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  border: white solid;
-}
-
-.sec5 {
-  height: 550px;
-  width: 45%;
-  background-color: white;
-  color: #fff;
-  text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  border: 2px solid grey;
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "image1 service1" "image2 service2" "image3 service3" "image4 service4";
-  -ms-grid-rows: 130px 130px 130px 130px;
-      grid-template-rows: 130px 130px 130px 130px;
-  -ms-grid-columns: 20% 80%;
-      grid-template-columns: 20% 80%;
-  grid-row-gap: 10px;
-}
-
 .sec6 {
   width: 100%;
   background-color: #682929;
@@ -392,7 +351,7 @@ footer {
   background-color: #682929;
   border: 3px solid black;
   color: white;
-  height: 300px;
+  height: 100%;
   font-size: 20px;
 }
 
@@ -424,6 +383,9 @@ footer {
     grid-column-gap: 0%;
     grid-row-gap: 20px;
   }
+  .item {
+    height: 100%;
+  }
 }
 
 @-webkit-keyframes animacioncontenedor {
@@ -446,21 +408,6 @@ footer {
     margin-left: 0%;
     width: 100%;
   }
-}
-
-.service5 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: right;
-      align-content: right;
-}
-
-.service1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: service1;
-  background-color: #000;
 }
 
 h1 {

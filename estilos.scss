@@ -247,39 +247,7 @@ footer{
     width: 100%;
     background-color: rgb(68, 21, 21);
     color: #fff;
-    }
-.sec4{
-    height: 80px;
-    width: 100%;
-    background-color: black;
-    color: #fff;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    flex-flow: wrap row;
-    justify-content: center;
-    align-items: stretch;
-    font-family: $font2;
-    border: white solid;
-      }
-
-.sec5{
-    height: 550px;
-    width: 45%;
-    background-color: rgb(255, 255, 255);
-    color: #fff;
-    text-align: center;
-    font-family: $font2;
-    border: 2px solid grey;
-    display: grid;
-    grid-template-areas:
-    "image1 service1"
-    "image2 service2"
-    "image3 service3"
-    "image4 service4" ;
-    grid-template-rows: 130px 130px 130px 130px;
-    grid-template-columns: 20% 80%;
-    grid-row-gap: 10px;
-    }
+}
 
 .sec6{
     width: 100%;
@@ -316,7 +284,6 @@ footer{
 
 }
 
-
 .contenedor{
     height: 100%;
     display: grid;
@@ -335,7 +302,7 @@ footer{
     background-color: rgb(104, 41, 41);
     border: 3px solid black;
     color: white;
-    height: 300px;
+    height: 100%;
     font-size: 20px;
 }
 
@@ -362,6 +329,9 @@ footer{
       grid-column-gap: 0%;
       grid-row-gap: 20px;
     }
+    .item{
+        height: 100%;
+    }
   }
 
 @keyframes animacioncontenedor {
@@ -375,17 +345,6 @@ footer{
     width: 100%;
   }
 }
-
-.service5{
-    display: flex;
-    align-content: right;
-    }
-    
-.service1{
-    grid-area: service1;
-    background-color: #000;
-
-    }
 
 h1{
     background-color: gold;
