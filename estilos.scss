@@ -244,6 +244,7 @@ footer{
 }
 .sec3{
     min-height: 80px;
+    height: 100%;
     width: 100%;
     background-color: rgb(68, 21, 21);
     color: #fff;
@@ -631,4 +632,11 @@ h2{
 }
 .how-img img{
     width: 40%;
+}
+//Corregir responsive
+.row{
+    width: 100% !important;
+}
+.card-deck{
+    width: 100% !important;
 }
