@@ -277,18 +277,14 @@ footer {
   border: white solid;
 }
 
-.sec3 {
+.sec3, .sec6 {
   min-height: 80px;
-  height: 100%;
   width: 100%;
   background-color: #441515;
   color: #fff;
 }
 
 .sec6 {
-  width: 100%;
-  background-color: #682929;
-  color: white;
   text-align: center;
 }
 
@@ -812,5 +808,76 @@ h2 {
 
 .card-deck {
   width: 100% !important;
+}
+
+.usodatos--datos1 {
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: arial;
+  background-color: var(--color1);
+}
+
+.usodatos--datos2 {
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: tahoma;
+  background-color: var(--color1);
+}
+
+.usodatos--datos3 {
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: comic sans ms;
+  background-color: var(--color1);
+}
+
+.proteccion1 {
+  height: 50px;
+  width: 100%;
+  background-color: grey;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+}
+
+.proteccion2 {
+  height: 70px;
+  width: 100%;
+  background-color: darkred;
+  color: white;
+  text-align: center;
 }
 /*# sourceMappingURL=estilos.css.map */

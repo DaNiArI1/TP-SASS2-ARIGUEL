@@ -244,16 +244,13 @@ footer{
 }
 .sec3{
     min-height: 80px;
-    height: 100%;
     width: 100%;
     background-color: rgb(68, 21, 21);
     color: #fff;
 }
 
 .sec6{
-    width: 100%;
-    background-color: rgb(104, 41, 41);
-    color: white;
+    @extend .sec3;
     text-align: center;
     
 }
@@ -639,4 +636,40 @@ h2{
 }
 .card-deck{
     width: 100% !important;
+}
+
+$datos: (
+
+datos1: arial,
+datos2: tahoma,
+datos3: comic sans ms,
+);
+
+@each $dato, $font in $datos {
+
+    .usodatos--#{$dato} {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        justify-content: center;
+        font-family: $font;
+        background-color: var(--color1);
+    }
+}
+@mixin cajas($width, $height, $bcolor, $textcolor) {
+    height: $height;
+    width: $width;
+    background-color: $bcolor;
+    color: $textcolor;
+}
+.proteccion1 {
+    @include cajas(100%,50px,grey,black)
+    text-align: center;
+    font-size: 20px;
+}
+.proteccion2 {
+    @include cajas(100%,70px,darkred,white)
+    text-align: center;
 }
