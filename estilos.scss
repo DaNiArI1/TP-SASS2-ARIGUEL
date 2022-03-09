@@ -658,18 +658,17 @@ datos3: comic sans ms,
         background-color: var(--color1);
     }
 }
-@mixin cajas($width, $height, $bcolor, $textcolor) {
+@mixin cajas($width, $height, $bcolor, $textcolor, $align, $fontsize) {
     height: $height;
     width: $width;
     background-color: $bcolor;
     color: $textcolor;
+    text-align: $align;
+    font-size: $fontsize;
 }
 .proteccion1 {
-    @include cajas(100%,50px,grey,black)
-    text-align: center;
-    font-size: 20px;
+    @include cajas(100%,50px,grey,black,center,20px)
 }
 .proteccion2 {
-    @include cajas(100%,70px,darkred,white)
-    text-align: center;
+    @include cajas(100%,70px,darkred,white,center)
 }
